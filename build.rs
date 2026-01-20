@@ -134,7 +134,6 @@ fn get_mnn_source(manifest_dir: &PathBuf) -> PathBuf {
     let status = Command::new("git")
         .args(&[
             "clone",
-            "--depth=1",
             "https://github.com/alibaba/MNN.git",
             local_mnn.to_str().unwrap(),
         ])
